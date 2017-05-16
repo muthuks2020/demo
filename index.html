@@ -1,4 +1,4 @@
-<html ng-app="unipaper" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<html ng-app="Test" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
   <head>
     <!-- For enabling pretty URLs uncomment this line. Place at the top in <head> to avoid errors on refreshing pages -->
     <base href="/">
@@ -9,19 +9,19 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="fb:app_id" content="1404174076277552">
-    <meta ng-if="articleMetaTags" property="article:publisher" content="https://www.facebook.com/TheUniPaper" />
+    <meta ng-if="articleMetaTags" property="article:publisher" content="https://www.facebook.com/test" />
     <meta ng-if="articleMetaTags" property="article:author" content="{{ articleMetaTags.authorFbPage }}" />
-    <meta property="og:site_name" content="Unipaper" />
-    <meta property="og:site" content="http://www.unipaper.co.uk" />
+    <meta property="og:site_name" content="Test" />
+    <meta property="og:site" content="http://www.test.com" />
     <meta property="og:title" content="{{ metaTags.title !== undefined ? metaTags.title : 'The University Paper' }}" />
     <meta property="og:description" content="{{ metaTags.description !== undefined ? metaTags.description : 'The University Paper' }}" />
     <meta property="og:image" content="{{ metaTags.ogImage !== undefined ? metaTags.ogImage : 'http://images.contentful.com/17u05p4x0l0r/1nuBvnXtgECCuWaKKWWuSc/5ecba7f23e8f1f31382e457e8b667c07/Rogue_One_-_A_Star_Wars_Story.jpg' }}" />
-    <meta property="og:url" content="{{ metaTags.ogUrl !== undefined ? metaTags.ogUrl : 'http://www.unipaper.co.uk' }}" />
+    <meta property="og:url" content="{{ metaTags.ogUrl !== undefined ? metaTags.ogUrl : 'http://www.test.com' }}" />
     <meta property="og:type" content="{{ articleMetaTags !== undefined ? 'article' : 'website' }}" />
     <meta name='twitter:card' content='summary_large_image' />
     <meta name='twitter:image:src' content="{{ metaTags.ogImage !== undefined ? metaTags.ogImage : 'http://images.contentful.com/17u05p4x0l0r/1nuBvnXtgECCuWaKKWWuSc/5ecba7f23e8f1f31382e457e8b667c07/Rogue_One_-_A_Star_Wars_Story.jpg' }}" />
-    <meta name='twitter:site' content="@TheUniPaper" />
-    <meta name='twitter:url' content="{{ metaTags.ogUrl !== undefined ? metaTags.ogUrl : 'http://www.unipaper.co.uk' }}" />
+    <meta name='twitter:site' content="@test" />
+    <meta name='twitter:url' content="{{ metaTags.ogUrl !== undefined ? metaTags.ogUrl : 'http://www.test.com' }}" />
     <meta name='twitter:description' content="{{ metaTags.description !== undefined ? metaTags.description : 'The University Paper' }}" />
     <meta name='twitter:title' content="{{ metaTags.title !== undefined ? metaTags.title : 'The University Paper' }}" />
     <meta property="description" content="{{ metaTags.description !== undefined ? metaTags.description : 'The University Paper' }}" />
@@ -132,13 +132,13 @@
       };
       googletag.cmd.push(function() {
         if(window.mobilecheck() === true) {
-          googletag.defineSlot('/287105756/unipaper_mpu_topad_mobile', [300, 250], 'div-gpt-ad-1473939867799-4').addService(googletag.pubads());
-          googletag.defineSlot('/287105756/unipaper_hpu_mobile', [300, 600], 'div-gpt-ad-1473939867799-1').addService(googletag.pubads());
-          googletag.defineSlot('/287105756/unipaper_mpu_mobile', [300, 250], 'div-gpt-ad-1473939867799-3').addService(googletag.pubads());
+          googletag.defineSlot('/287105756/Test_mpu_topad_mobile', [300, 250], 'div-gpt-ad-1473939867799-4').addService(googletag.pubads());
+          googletag.defineSlot('/287105756/Test_hpu_mobile', [300, 600], 'div-gpt-ad-1473939867799-1').addService(googletag.pubads());
+          googletag.defineSlot('/287105756/Test_mpu_mobile', [300, 250], 'div-gpt-ad-1473939867799-3').addService(googletag.pubads());
         } else {
-          googletag.defineSlot('/287105756/unipaper_hpu', [300, 600], 'div-gpt-ad-1473939867799-0').addService(googletag.pubads());
-          googletag.defineSlot('/287105756/unipaper_mpu', [300, 250], 'div-gpt-ad-1473939867799-2').addService(googletag.pubads());
-          googletag.defineSlot('/287105756/unipaper_super_leaderboard_rotation_1', [970, 250], 'div-gpt-ad-1473939867799-5').addService(googletag.pubads());
+          googletag.defineSlot('/287105756/Test_hpu', [300, 600], 'div-gpt-ad-1473939867799-0').addService(googletag.pubads());
+          googletag.defineSlot('/287105756/Test_mpu', [300, 250], 'div-gpt-ad-1473939867799-2').addService(googletag.pubads());
+          googletag.defineSlot('/287105756/Test_super_leaderboard_rotation_1', [970, 250], 'div-gpt-ad-1473939867799-5').addService(googletag.pubads());
         }
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
