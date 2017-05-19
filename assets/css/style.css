@@ -1897,10 +1897,6 @@ md-dialog.md-transition-in{
     text-align: left;
     width: 24%;
   }
-  .navbar-inverse .collapse.navbar-collapse{
-    margin: 0 0 0 190px;
-    float: right;
-  }
 }
 @media (max-width: 991px){
   .fb-comments-panel{
@@ -1921,15 +1917,6 @@ md-dialog.md-transition-in{
   }
 }
 @media (min-width:768px){
-  .navbar-header{
-    position: absolute;
-  }
-  .navbar-right{
-    margin: 0 0 0 60px;
-  }
-  .navbar-inverse .collapse.navbar-collapse{
-    margin: 0 0 0 140px;
-  }
   .share-navbar{
     display: none !important;
   }
@@ -4103,6 +4090,7 @@ md-select-value .md-text, md-option .md-text {
 /* SocialMedia Embed */
 
 .embedly-card-hug{
+  width: 100% !important;
   max-width: 100% !important;
 }
 .embedly-card-hug .card .brd{

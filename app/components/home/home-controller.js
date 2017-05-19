@@ -293,7 +293,7 @@ unipaper.controller('homeController', function($scope, $timeout, contentful, env
       document.querySelector("body").style.overflow = "auto";
       $scope.facebookToShow = false;
       document.querySelector(".up-mask").style.display = "none";
-      window.open("https://www.facebook.com/TheUniPaper/");
+      window.open("https://www.facebook.com/ThePaper/");
       location.reload();
     };
     $scope.facebookClose = function() {
@@ -314,7 +314,7 @@ unipaper.controller('homeController', function($scope, $timeout, contentful, env
         }, 10000 );
       }
     }
-    
+
     function getCookie(cname) {
       var name = cname + "=";
       var decodedCookie = decodeURIComponent(document.cookie);
@@ -331,5 +331,5 @@ unipaper.controller('homeController', function($scope, $timeout, contentful, env
       return "";
     }
   /* Facebook link action end */
-  
+
 });

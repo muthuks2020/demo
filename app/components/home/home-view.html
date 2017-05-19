@@ -1,6 +1,15 @@
 <!-- Different main-content for mobiles and desktops because of a demarcation between the center and right pane -->
 <div class="main-content">
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9&appId=1416687525020480";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
   <!-- Facebook like section start -->
   <div class="up-facebook-area" ng-show='facebookToShow' ng-style="upFacebookArea">
     <div class="up-facebook-area-inner">
@@ -9,11 +18,11 @@
       <i class="fa fa-circle-thin fa-stack-2x"></i>
       <i class="fa fa-times fa-stack-1x"></i>
       </span>
-      <button ng-click="facebookLike()" class="btn btn-border md-button md-ink-ripple up-readmore-btn">Like us on<br/>Facebook</button>
+      <div class="fb-like" data-href="https://www.facebook.com/TheUniPaper/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+     <!-- <div class="fb-like" data-href="https://www.facebook.com/TheUniPaper/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false">Like us on<br/>Facebook</div> -->
     </div>
   </div>
   <!-- Facebook like section end -->
-
   <!-- Center pane begins -->
   <div class="center-pane">
     <div class="panel-divider"></div>
